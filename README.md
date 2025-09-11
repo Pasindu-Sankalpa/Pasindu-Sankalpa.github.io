@@ -1,6 +1,6 @@
 # Academic Portfolio
 
-This repository contains an elegant and responsive academic portfolio built using HTML, CSS, JavaScript, and Bootstrap. Designed for students, researchers, and academics, this allows to showcase educational background, research projects, publications, and professional accomplishments in a clean and modern layout.
+This repository contains an elegant and responsive academic portfolio built using HTML, CSS, JavaScript, and Bootstrap.This portfolio designed for students, researchers, and academics and allows to showcase educational background, research projects, publications, and professional accomplishments in a clean and modern layout.
 
 ## Features
 

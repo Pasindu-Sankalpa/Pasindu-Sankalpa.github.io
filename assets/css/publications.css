@@ -7,6 +7,10 @@
   color: var(--darker-b);
 }
 
+body.dark-mode .ref-author-lemos {
+  color: var(--light-gray);
+}
+
 .ref-journal {
   font-weight: 700;
   font-style: italic;
@@ -26,4 +30,8 @@ li > span > a:hover {
   background-color: var(--bluish-gray);
   border-radius: 5px;
   border: 1px solid var(--blue-light);
+}
+
+body.dark-mode .articles-card {
+  background-color: var(--darker-b);
 }
