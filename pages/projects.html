@@ -26,8 +26,16 @@
         <div class="container mt-4">
             <h5><b>__ Projects _____________________</b></h5>
 
+            <div role="group" aria-label="Project Categories">
+                <button class="btn filter-btn active" data-filter="all">All</button>
+                <button class="btn filter-btn" data-filter="odu">ODU</button>
+                <button class="btn filter-btn" data-filter="adl">ADL</button>
+                <button class="btn filter-btn" data-filter="uom">UoM</button>
+                <button class="btn filter-btn" data-filter="other">Other</button>
+            </div>
+
             <!-- project 1 -->
-            <div class="mt-3 card">
+            <div class="mt-3 card" data-category="odu">
                 <div class="card-body">
                     <div class="row mt-2 mt-md-0">
                         <div class="col-md-2 text-center">
@@ -67,7 +75,7 @@
             </div>
 
             <!-- project 2 -->
-            <div class="mt-3 card">
+            <div class="mt-3 card" data-category="adl">
                 <div class="card-body">
                     <div class="row mt-2 mt-md-0">
                         <div class="col-md-2 text-center">
@@ -123,6 +131,7 @@
     <script src="/components/header.js" type="text/javascript" defer></script>
     <script src="/components/footer.js" type="text/javascript"></script>
     <script src="/components/footer-lemos.js" type="text/javascript"></script>
+    <script src="/components/project-filter.js" type="text/javascript"></script>
 
 </body>
 

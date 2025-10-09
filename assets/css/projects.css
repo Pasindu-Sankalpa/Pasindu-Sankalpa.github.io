@@ -16,3 +16,16 @@
   font-size: smaller;
   font-family: Consolas;
 }
+
+.filter-btn {
+  margin: 5px 5px 15px 0;
+  background-color: var(--blue-light);
+  color: white;
+  border: none;
+}
+
+.filter-btn.active {
+  background-color: var(--blue-dark);
+  color: white;
+  border-color: var(--blue-medium);
+}
