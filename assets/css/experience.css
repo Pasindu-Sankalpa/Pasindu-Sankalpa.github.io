@@ -2,22 +2,8 @@
 # Experience Page Specific Styles
 --------------------------------------------------------------*/
 
-a.exp-affiliation {
-  color: var(--gray-black);
-}
-
-.card-subtitle {
-  font-weight: 500;
-}
-
 .card-img-top {
   max-width: 150px;
   min-width: 100px;
   border-radius: 5px;
-}
-
-.designation-lemos {
-  font-weight: 700;
-  font-size: large;
-  color: var(--blue-medium);
 }

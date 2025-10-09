@@ -15,7 +15,7 @@ This repository contains an elegant and responsive academic portfolio built usin
 - **Home**: A welcoming introduction with a brief overview and personal photo.
 - **Education**: A comprehensive list of educational qualifications.
 - **Experience**: Professional experience including jobs, internships, and volunteer work.
-- **Skills**: Technical and soft skills.
+- **Skills**: Technical and soft skills. (Used images from [VectorLogoZone](https://www.vectorlogo.zone/) and [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page))
 - **Teaching**: Teaching experience and related activities.
 - **Projects**: Academic and personal projects.
 - **Publications**: Published papers, articles, and other scholarly work.

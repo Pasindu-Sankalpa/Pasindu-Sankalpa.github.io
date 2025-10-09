@@ -2,10 +2,6 @@
 # Teaching Page Specific Styles
 --------------------------------------------------------------*/
 
-.span-lemos {
-  color: var(--gray-black);
-}
-
 .card-img-top {
   max-width: 250px;
 }

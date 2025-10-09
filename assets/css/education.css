@@ -2,15 +2,6 @@
 # Education Page Specific Styles
 --------------------------------------------------------------*/
 
-.card-subtitle {
-  font-weight: 700;
-  color: var(--blue-medium);
-}
-
-.span-lemos {
-  color: var(--gray-black);
-}
-
 .card-img-top {
   max-width: 250px;
 }
@@ -22,4 +13,19 @@
 
 .activity-lemos {
   font-size: 95%;
+}
+
+.certifications {
+  display: flex;
+  flex-direction: column;
+}
+
+.cert-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 8px 12px;
+  flex-wrap: wrap;
 }

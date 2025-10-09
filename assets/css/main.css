@@ -12,7 +12,7 @@
   --blue-dark: #0f4c75;
   --dark-b: #003566;
   --gray-black: #415a77;
-  --darker-b: #1b262c;
+  --darker-b: #415058;
 
   /* https://colorhunt.co/palette/f9f7f7dbe2ef3f72af112d4e */
 }
@@ -68,6 +68,7 @@ nav {
   color: var(--white-ish) !important;
   background-color: var(--blue-light);
   border: 2px solid var(--blue-medium);
+  transition: background-color 0.2s ease, transform 0.1s ease; /* Smooth color transition */
 }
 
 .btn-blue > a {
@@ -75,9 +76,11 @@ nav {
   border-color: var(--light-gray);
 }
 
+a.btn-blue:hover,
 button:hover {
-  font-size: 1.0001rem;
   background-color: var(--blue-medium);
+  transform: translateY(-1px);
+  filter: brightness(1.1); /* Slightly brighten the button */
 }
 
 button > a {
@@ -124,10 +127,24 @@ body.dark-mode .card {
   background-color: var(--darker-b);
 }
 
+.card-subtitle {
+  font-weight: 700;
+  font-size: large;
+  color: var(--blue-medium);
+}
+
 .small-lemos {
   font-weight: 500;
   font-size: smaller;
   color: var(--blue-light);
+}
+
+.span-lemos {
+  color: var(--gray-black);
+}
+
+body.dark-mode .span-lemos {
+  color: var(--light-gray);
 }
 
 .responsive-text {

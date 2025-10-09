@@ -1,3 +1,36 @@
 /*--------------------------------------------------------------
 # Skills Page Specific Styles
 --------------------------------------------------------------*/
+
+.skills-subtitle {
+  text-align: left;
+  color: var(--blue-light);
+}
+
+.skill-item {
+  display: inline-block;
+  border: 2px solid var(--blue-medium);
+  color: var(--blue-light);
+  background-color: transparent;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin: 4px;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.language-card {
+  display: flex;
+  gap: 15px;
+}
+
+.language-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stars {
+  color: darkgoldenrod;
+  margin-right: 2px;
+}
