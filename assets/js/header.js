@@ -63,15 +63,15 @@ class Header extends HTMLElement {
 
         toggleButton.addEventListener("click", () => {
             if (body.classList.contains("light-mode")) {
-            body.classList.remove("light-mode");
-            body.classList.add("dark-mode");
-            localStorage.setItem("theme", "dark-mode");
-            toggleButton.textContent = "☀️"; // switch to sun
+                body.classList.remove("light-mode");
+                body.classList.add("dark-mode");
+                localStorage.setItem("theme", "dark-mode");
+                toggleButton.textContent = "☀️"; // switch to sun
             } else {
-            body.classList.remove("dark-mode");
-            body.classList.add("light-mode");
-            localStorage.setItem("theme", "light-mode");
-            toggleButton.textContent = "🌙"; // switch to moon
+                body.classList.remove("dark-mode");
+                body.classList.add("light-mode");
+                localStorage.setItem("theme", "light-mode");
+                toggleButton.textContent = "🌙"; // switch to moon
             }
         });
 

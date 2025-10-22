@@ -105,6 +105,11 @@ ul > li {
   font-family: "Ubuntu Sans", sans-serif;
 }
 
+h5 > b {
+  font-family: "Ubuntu Mono", monospace; /* Every character takes the same width with monospace fonts */
+  font-size: larger;
+}
+
 a {
   color: var(--blue-light);
 }
