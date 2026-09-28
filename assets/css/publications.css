@@ -20,10 +20,13 @@ body.dark-mode .ref-author-lemos {
 }
 
 li > span > a:hover {
-  color: var(--blue-medium);
-  text-decoration: none;
-  font-size: 1.001rem;
-  font-weight: 700 !important;
+    color: var(--blue-medium);
+    text-decoration: none;
+    font-size: 1.001rem;
+    font-weight: 400 !important;
+    text-shadow:
+        0.4px 0 currentColor,
+        -0.4px 0 currentColor;
 }
 
 .articles-card {
@@ -34,4 +37,26 @@ li > span > a:hover {
 
 body.dark-mode .articles-card {
   background-color: var(--darker-b);
+}
+
+.bibtex-card{
+  position: relative;
+  font-size: 0.9rem;
+  border: 1px solid var(--blue-light);
+  background-color: var(--light-gray);
+  border-radius: 5px;
+}
+
+body.dark-mode .bibtex-card pre{
+  color: var(--white-ish);
+  background-color: var(--gray-black);
+}
+
+.bibtex-copy-btn{
+  position: absolute;
+  top: 8px; 
+  right: 8px;
+  color: var(--gray-black);
+  background-color: var(--white-ish);
+  border: 1px solid var(--blue-light);
 }
