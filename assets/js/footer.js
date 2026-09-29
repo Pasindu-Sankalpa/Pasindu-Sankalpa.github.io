@@ -5,7 +5,7 @@ class Footer extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-            <div class="footer-lemos mt-5">
+            <div class="footer-lemos">
                 <div class="py-3 px-md-5 container-fluid">
                     <div class="row">
                         <div class="col-auto col-md-5 align-middle">

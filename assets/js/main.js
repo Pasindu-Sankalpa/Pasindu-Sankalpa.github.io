@@ -10,3 +10,34 @@ document.addEventListener("DOMContentLoaded", () => {
         el.textContent = base + "_".repeat(remaining);
     });
 });
+
+// Add a floating bottom-to-top button
+document.addEventListener("DOMContentLoaded", () => {
+    const bottomToTopBtn = document.createElement("button");
+    bottomToTopBtn.id = "bottom-to-top";
+    bottomToTopBtn.type = "button";
+    bottomToTopBtn.setAttribute("aria-label", "Bottom to top");
+    bottomToTopBtn.textContent = "↑";
+
+    document.body.appendChild(bottomToTopBtn);
+
+    const toggleButton = () => {
+        // Check how far the page has scrolled from the bottom
+        const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+        if (totalHeight - window.scrollY < 35) {
+            bottomToTopBtn.classList.add("show");
+        } else {
+            bottomToTopBtn.classList.remove("show");
+        }
+    };
+
+    window.addEventListener("scroll", toggleButton);
+    toggleButton();
+
+    bottomToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});

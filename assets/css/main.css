@@ -38,6 +38,10 @@ body.dark-mode a {
   color: var(--blue-light);
 }
 
+body.dark-mode .social-icons a {
+    color: var(--light-gray);
+}
+
 body.dark-mode .navbar {
   background-color: var(--dark-b);
 }
@@ -56,6 +60,11 @@ nav {
 
 .nav-link {
   color: var(--light-gray) !important;
+}
+
+.nav-link.active {
+  border: 2px solid #fff;
+  border-radius: 4px;
 }
 
 .navbar-expand-lg {
@@ -200,4 +209,31 @@ body.dark-mode .span-lemos {
   bottom: 0; /* Fixes it at bottom */
   width: 100%;
   height: 2.5rem; /* Footer height */
+}
+
+#bottom-to-top {
+    position: fixed;
+    right: 50%;
+    bottom: 24px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background: var(--blue-medium);
+    color: var(--white-ish);
+    font-size: 24px;
+    line-height: 1;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: all 0.25s ease;
+    z-index: 9999;
+}
+
+#bottom-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }

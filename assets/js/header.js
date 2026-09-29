@@ -48,6 +48,19 @@ class Header extends HTMLElement {
             </header>
         `;
 
+        // Highlight the current page in the navigation bar
+        const currentPath = (window.location.pathname || "/").replace(/\/+$/, "") || "/";
+        const navLinks = this.querySelectorAll(".nav-link");
+
+        navLinks.forEach(link => {
+            const href = link.getAttribute("href");
+            const normalizedHref = (href || "/").replace(/\/+$/, "") || "/";
+            if (normalizedHref === currentPath) {
+                link.classList.add("active");
+                link.closest(".nav-item")?.classList.add("active");
+            }
+        });
+
         const toggleButton = document.getElementById("theme-toggle");
         const body = document.body;
 
