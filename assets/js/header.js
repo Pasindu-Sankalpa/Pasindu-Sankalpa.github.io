@@ -39,7 +39,7 @@ class Header extends HTMLElement {
                             <li class="nav-item mr-2">
                                 <a class="nav-link" href="/pages/blogposts.html">Blogs</a>
                             </li>
-                            <li class="nav-item mr-2">
+                            <li class="nav-item mr-2 mt-1">
                                 <button id="theme-toggle" class="btn btn-blue">🌙</button>
                             </li>
                         </ul>
